@@ -1,0 +1,8 @@
+Changes
+Makefile.PL
+MANIFEST
+PiFace.xs
+ppport.h
+README
+t/PiFace.t
+lib/PiFace.pm
