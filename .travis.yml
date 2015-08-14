@@ -1,0 +1,14 @@
+language: perl
+perl:
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+  - "5.12"
+  - "5.10.1"
+install:
+  - "./travis-build-c-deps.sh"
+  - "cpanm -n Test::Fatal Test::Pod"
+  - "cpanm -n --installdeps ."
+script: PIFACE_ENABLE_HW_TESTS=n perl Makefile.PL && make && make test
+sudo: true
