@@ -6,10 +6,10 @@ pushd libmcp23s17
 make
 sudo make install
 popd
-rm -r libmcp23s17
+rm -rf libmcp23s17
 git clone https://github.com/piface/libpifacedigital.git
 pushd libpifacedigital
 make
 sudo make install
 popd
-rm -r libpifacedigital
+rm -rf libpifacedigital
